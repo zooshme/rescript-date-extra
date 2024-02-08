@@ -1,0 +1,13 @@
+{
+  "name": "@zooshme/rescript-date-extra",
+  "version": "0.0.1",
+  "scripts": {
+    "res:build": "./node_modules/.bin/rescript",
+    "res:dev": "./node_modules/.bin/rescript build -w"
+  },
+  "dependencies": {
+    "@rescript/core": "^0.7.0",
+    "rescript": "^11.0.1"
+  },
+  "type": "module"
+}
