@@ -19,7 +19,8 @@
   "suffix": ".res.mjs",
   "bs-dependencies": [
     "@rescript/core",
-    "@rescript/react"
+    "@rescript/react",
+    "@zooshme/rescript-string-extra"
   ],
   "bsc-flags": [
     "-open RescriptCore"
