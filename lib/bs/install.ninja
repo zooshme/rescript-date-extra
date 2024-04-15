@@ -1,0 +1,10 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o DateExtra.cmi : cp ../bs/./src/DateExtra.cmi
+o DateExtra.cmj : cp ../bs/./src/DateExtra.cmj
+o DateExtra.cmt : cp ../bs/./src/DateExtra.cmt
+o DateExtra.res : cp ../.././src/DateExtra.res
+build install.stamp : touch DateExtra.cmi DateExtra.cmj 

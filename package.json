@@ -1,17 +1,18 @@
 {
   "name": "@zooshme/rescript-date-extra",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "scripts": {
     "res:build": "./node_modules/.bin/rescript",
     "res:dev": "./node_modules/.bin/rescript build -w"
   },
   "dependencies": {
-    "@1.2.0": "link:@rescript/core/@1.2.0",
-    "@rescript/core": "^0.7.0",
     "@rescript/react": "^0.12.1",
     "@zooshme/rescript-date-extra": "^0.0.2",
     "@zooshme/rescript-string-extra": "^0.0.5",
     "rescript": "^11.0.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@rescript/core": "^1.2.0"
+  }
 }

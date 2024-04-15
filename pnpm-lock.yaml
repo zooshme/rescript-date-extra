@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@1.2.0':
-    specifier: link:@rescript/core/@1.2.0
-    version: link:@rescript/core/@1.2.0
-  '@rescript/core':
-    specifier: ^0.7.0
-    version: registry.npmjs.org/@rescript/core@0.7.0(rescript@11.0.1)
   '@rescript/react':
     specifier: ^0.12.1
     version: registry.npmjs.org/@rescript/react@0.12.1(react-dom@18.2.0)(react@18.2.0)
@@ -23,6 +17,11 @@ dependencies:
   rescript:
     specifier: ^11.0.1
     version: registry.npmjs.org/rescript@11.0.1
+
+devDependencies:
+  '@rescript/core':
+    specifier: ^1.2.0
+    version: registry.npmjs.org/@rescript/core@1.2.0(rescript@11.0.1)
 
 packages:
 
@@ -50,6 +49,17 @@ packages:
     dependencies:
       rescript: registry.npmjs.org/rescript@11.0.1
     dev: false
+
+  registry.npmjs.org/@rescript/core@1.2.0(rescript@11.0.1):
+    resolution: {integrity: sha512-/crGFHKPGeCCrwkVZQ0ugJZxjh79pT5nIPdlfITwiQvO4FoxwnABRiHWiJ7bi2H0RiU1KRrUtVwA5CQV4hJVnQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@rescript/core/-/core-1.2.0.tgz}
+    id: registry.npmjs.org/@rescript/core/1.2.0
+    name: '@rescript/core'
+    version: 1.2.0
+    peerDependencies:
+      rescript: '>=11.0.0 || ^11.1.0-rc.2'
+    dependencies:
+      rescript: registry.npmjs.org/rescript@11.0.1
+    dev: true
 
   registry.npmjs.org/@rescript/react@0.12.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ZD7nhDr5FZgLYqRH9s4CNM+LRz/3IMuTb+LH12fd2Akk0xYkYUP+DZveB2VQUC2UohJnTf/c8yPSNsiFihVCCg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@rescript/react/-/react-0.12.1.tgz}
@@ -108,7 +118,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     requiresBuild: true
-    dev: false
 
   registry.npmjs.org/scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz}
